@@ -1,5 +1,5 @@
 {% set name = "sphinxcontrib-plantuml" %}
-{% set version = "0.25" %}
+{% set version = "0.27" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinxcontrib-plantuml-{{ version }}.tar.gz
-  sha256: 8fde531d92d1cfc2817fe3647b3f2d07e76682c4a84889c04a53e831f7c54432
+  sha256: 8975778eed9c142a42ecdc4ecd83132dec0690c035cae788c123750ead526703
 
 build:
   noarch: python
