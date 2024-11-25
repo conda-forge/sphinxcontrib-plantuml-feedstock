@@ -1,5 +1,5 @@
 {% set name = "sphinxcontrib-plantuml" %}
-{% set version = "0.29" %}
+{% set version = "0.30" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sphinxcontrib-plantuml-{{ version }}.tar.gz
-  sha256: 97a4f2a26af91db88770ccf8a3b2e03305bcda7ec41a7f969fc8cb27b84a3c44
+  sha256: 2a1266ca43bddf44640ae44107003df4490de2b3c3154a0d627cfb63e9a169bf
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
